@@ -578,7 +578,6 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Sources/Main/Info.plist;
 				INSTALL_PATH = "@loader_path/../Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = FeedbackReporter;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -593,7 +592,6 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Sources/Main/Info.plist;
 				INSTALL_PATH = "@loader_path/../Frameworks";
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = FeedbackReporter;
 				WRAPPER_EXTENSION = framework;
 			};
@@ -603,6 +601,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
@@ -640,6 +639,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -647,6 +647,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
@@ -684,6 +685,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = NO;
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -695,7 +697,6 @@
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				INFOPLIST_FILE = "Sources/Tests/Tests-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = Tests;
 				WRAPPER_EXTENSION = octest;
 			};
@@ -709,7 +710,6 @@
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				INFOPLIST_FILE = "Sources/Tests/Tests-Info.plist";
 				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = Tests;
 				WRAPPER_EXTENSION = octest;
 			};
